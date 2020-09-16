@@ -1,6 +1,6 @@
 {
   "name": "robocorp-github-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "git@github.com:rihardsgravis/robocorp-github-action.git",
   "author": "Rihards Gravis <rihards@gravis.lv>",

@@ -19,7 +19,7 @@ async function triggerRobot() {
   const json = await response.json();
 
   if (json.message !== 'OK') {
-    throw Error('Failed to start process');
+    throw Error(`Failed to start process ${core.getInput('process-url')} - ${JSON.stringify(json)}`);
   }
 
   const { workspaceId, processId, processRunId } = json;
