@@ -1,0 +1,18 @@
+{
+  "name": "robocorp-github-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rihardsgravis/robocorp-github-action.git",
+  "author": "Rihards Gravis <rihards@gravis.lv>",
+  "license": "MIT",
+  "keywords": [
+    "robocorp",
+    "github-actions"
+  ],
+  "dependencies": {
+    "@actions/core": "^1.2.5",
+    "@actions/github": "^4.0.0",
+    "axios": "^0.20.0",
+    "node-fetch": "^2.6.1"
+  }
+}
