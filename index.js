@@ -6,7 +6,7 @@ const sleep = (seconds) => new Promise((resolve) => setTimeout(resolve, seconds 
 
 const headers = {
   headers: {
-    'robocloud-process-secret': `Bearer ${core.getInput('process-secret')}`,
+    'robocloud-process-secret': core.getInput('process-secret'),
     'Content-Type': 'application/json',
   },
 };
@@ -19,7 +19,7 @@ async function triggerRobot() {
   const json = await response.json();
 
   if (json.message !== 'OK') {
-    throw Error(`Failed to start process ${core.getInput('process-url')} - ${JSON.stringify(json)}`);
+    throw Error(`Failed to start process - ${JSON.stringify(json)}`);
   }
 
   const { workspaceId, processId, processRunId } = json;
