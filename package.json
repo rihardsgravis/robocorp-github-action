@@ -10,9 +10,9 @@
     "github-actions"
   ],
   "dependencies": {
-    "@actions/core": "^1.2.5",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.0",
     "node-fetch": "^2.6.1"
   }
 }
